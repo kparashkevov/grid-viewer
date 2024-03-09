@@ -47,6 +47,7 @@ function createWindow() {
       obj.ownedBy = cnt[index][headers.indexOf('Owned By')]
       obj.techOwner = cnt[index][headers.indexOf('Technical Owner')]
       obj.qaOwner = cnt[index][headers.indexOf('QA owner')]
+      obj.relIteration = cnt[index][headers.indexOf('Release Iteration')]
       obj.qaConfirmed = parseBoolean(cnt[index][headers.indexOf('QA confirmed')])
       obj.baConfirmed = parseBoolean(cnt[index][headers.indexOf('BA confirmed')])
       obj.wsConfirmed = parseBoolean(cnt[index][headers.indexOf('WS confirmed')])

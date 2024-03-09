@@ -20,25 +20,25 @@ function GridView(props: IGridView) {
                 <thead>
                     <tr style={{ display: "flex" }}>
                         {props.colDatas.col0.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length > 0 &&
-                            <th style={{ width: `${baseWidth}px` }}>{props.colDatas.col0.colName}</th>}
+                            <th style={{ width: `${baseWidth}px` }}>{`${props.colDatas.col0.colName} (${props.colDatas.col0.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length})`}</th>}
                         {props.colDatas.col1.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length > 0 &&
-                            <th style={{ width: `${baseWidth}px` }}>{props.colDatas.col1.colName}</th>}
+                            <th style={{ width: `${baseWidth}px` }}>{`${props.colDatas.col1.colName} (${props.colDatas.col1.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length})`}</th>}
                         {props.colDatas.col2.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length > 0 &&
-                            <th style={{ width: `${baseWidth}px` }}>{props.colDatas.col2.colName}</th>}
+                            <th style={{ width: `${baseWidth}px` }}>{`${props.colDatas.col2.colName} (${props.colDatas.col2.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length})`}</th>}
                         {props.colDatas.col3.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length > 0 &&
-                            <th style={{ width: `${baseWidth}px` }}>{props.colDatas.col3.colName}</th>}
+                            <th style={{ width: `${baseWidth}px` }}>{`${props.colDatas.col3.colName} (${props.colDatas.col3.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length})`}</th>}
                         {props.colDatas.col4.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length > 0 &&
-                            <th style={{ width: `${baseWidth}px` }}>{props.colDatas.col4.colName}</th>}
+                            <th style={{ width: `${baseWidth}px` }}>{`${props.colDatas.col4.colName} (${props.colDatas.col4.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length})`}</th>}
                         {props.colDatas.col5.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length > 0 &&
-                            <th style={{ width: `${baseWidth}px` }}>{props.colDatas.col5.colName}</th>}
+                            <th style={{ width: `${baseWidth}px` }}>{`${props.colDatas.col5.colName} (${props.colDatas.col5.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length})`}</th>}
                         {props.colDatas.col6.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length > 0 &&
-                            <th style={{ width: `${baseWidth}px` }}>{props.colDatas.col6.colName}</th>}
+                            <th style={{ width: `${baseWidth}px` }}>{`${props.colDatas.col6.colName} (${props.colDatas.col6.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length})`}</th>}
                         {props.colDatas.col7.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length > 0 &&
-                            <th style={{ width: `${baseWidth}px` }}>{props.colDatas.col7.colName}</th>}
+                            <th style={{ width: `${baseWidth}px` }}>{`${props.colDatas.col7.colName} (${props.colDatas.col7.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length})`}</th>}
                         {props.colDatas.col8.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length > 0 &&
-                            <th style={{ width: `${baseWidth}px` }}>{props.colDatas.col8.colName}</th>}
+                            <th style={{ width: `${baseWidth}px` }}>{`${props.colDatas.col8.colName} (${props.colDatas.col8.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length})`}</th>}
                         {props.colDatas.col9.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length > 0 &&
-                            <th style={{ width: `${baseWidth}px` }}>{props.colDatas.col9.colName}</th>}
+                            <th style={{ width: `${baseWidth}px` }}>{`${props.colDatas.col9.colName} (${props.colDatas.col9.entries.filter(e1 => filter(props.profiles, props.activeProfile, e1)).length})`}</th>}
                     </tr>
                 </thead>
                 <tbody>

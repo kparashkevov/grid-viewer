@@ -25,7 +25,7 @@ function GridCell(props: ICellData) {
                 color: "black", 
                 fontWeight: "bold", 
                 maxWidth: "208px", 
-                height: "148px",
+                height: "164px",
                 border: "3px solid rgb(180,180,180)"
             }}>
                 <span dangerouslySetInnerHTML={{ __html: `${iconMap[props.rowData.type]} ${props.rowData.id}` }}></span>
@@ -54,6 +54,10 @@ function GridCell(props: ICellData) {
                     <span style={{ width: "33.3%" }} dangerouslySetInnerHTML={{ __html: `${props.rowData.baConfirmed ? '&#9745;' : '&#9744;'}` }}></span>
                     <span style={{ width: "33.3%" }} dangerouslySetInnerHTML={{ __html: `${props.rowData.wsConfirmed ? '&#9745;' : '&#9744;'}` }}></span>
                 </div>
+                <br />
+                {props.rowData.type != 'Task' ?
+                    <span style={{fontWeight: "bold"}}>{"Rls: " + props.rowData.relIteration}</span> : null
+                }
             </div>
         </>
     )
